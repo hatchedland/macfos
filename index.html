@@ -4,5 +4,9 @@
 
 layout: home
 title: Home
-banner: "/assets/images/banners/home.png"
+banner: "/assets/images/banners/home.jpg"
+
 ---
+{% for a in site.equipment %}
+	{{a.title}}
+{% endfor %}

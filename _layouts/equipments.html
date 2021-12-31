@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{{ content }}
+{% if page.active %}
+			Status: {{ page.active }}
+{% else %}
+			Status: Active
+			{{ page.title }}
+{% endif %}

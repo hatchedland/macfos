@@ -1,0 +1,13 @@
+---
+layout: equipments
+title: Equipments
+---
+<ul class="equipments-list">
+	{% for equipment in site.collections.equipments %}
+	<li>
+		<h2 class="equipment-name">{{ equipment.title }}</h2>
+	</li>
+
+{% endfor %}
+
+</ul>

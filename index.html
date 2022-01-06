@@ -1,12 +1,140 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Home
-banner: "/assets/images/banners/home.jpg"
+banner: 
+accordion: 
+  - title: this is item 1
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  - title: this is item 2
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ---
-{% for a in site.equipment %}
-	{{a.title}}
-{% endfor %}
+
+
+<!-- recent blogs -->
+<div class="blog-section">
+    <h1 class="heading-landing">Recent Blogs</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts offset:1 limit:3 %}
+        <li>
+            {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
+
+            {% assign article = post.content %}
+            {% assign lang = post.lang %}
+            {%- include functions.html func='get_reading_time' -%}
+            {% assign reading_time = return %}
+            {%- include functions.html func='get_article_excerpt' -%}
+            {% assign excerpt = return %}
+            {%- assign post_url = post.url | relative_url -%}
+
+            <h2 class="post-title">
+                <a class="post-link" href="{{ post_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h2>
+            <div class="post-meta">
+                <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: date_format }}</span>
+                <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
+            </div>
+            <a class="post-excerpt" href="{{ post_url }}">
+                <p>
+                    {{ excerpt }} <span class="read_more">Read More</span>
+                </p>
+            </a>
+            <div class="post-tags">
+                {%- for tag in post.tags -%}
+                <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
+                {%- endfor -%}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- About lab -->
+<div class="about-section">
+    <h1 class="heading-landing">About Lab</h1>
+    <p class="about-lab">
+        One of the newest labs on campus, the IoT lab hosts planning, prototyping, implementation and testing of IoT
+        systems. It also hosts various research activities in areas related to the Internet of Things such as Security,
+        Blockchain, Artificial Intelligence (AI), Brain Computer Interface (BCI), 5G etc. Often, this lab can be seen
+        with undergraduates, master’s students and research scholars working on collaborative and interdisciplinary
+        projects. The lab has active collaboration with various reputed researchers across the globe, and has
+        significant research impact in the above mentioned research areas in terms of research publications and
+        projects.
+    </p>
+    <a href="/about.html"><button class="know-more">Know more</button></a>
+</div>
+
+
+<!-- Supporter's page -->
+<div class="supporter-section">
+    <h1 class="heading-landing">Our Supporters</h1>
+    <div class="supporter-card-wrapper">
+        <div class="supporter-card">
+           <div class="supporter-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+           <div>
+            <h2 class="supporter-name">Deepak Yadav</h2>
+            <div class="supporter-profession">Founder Momentum Robotics</div>
+            <div class="supporter-quotes">"Loremdads dsd sdsd s d s ds d s d s ds  d sd s d"</div>
+           </div>
+        </div>
+        <div class="supporter-card">
+           <div class="supporter-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+           <div>
+            <h2 class="supporter-name">Deepak Yadav</h2>
+            <div class="supporter-profession">Founder Momentum Robotics</div>
+            <div class="supporter-quotes">"Loremdads dsd sdsd s d s ds d s d s ds  d sd s d"</div>
+           </div>
+    </div>
+</div>
+
+
+<!-- team members -->
+
+<div class="team-section">
+    <h1 class="heading-landing">Our Team</h1>
+    <h2 class="team-member-heading">Secratary</h2>
+    <div class="team-card-wrapper">
+        <div class="team-member-card">
+            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <div class="member-name">Rajan Yadav</div>
+            <div class="member-domain">dsdsdsdsds dsds</div>
+            <a class="view-linkedin" href="#">View on linkedin </a>
+         </div>
+        <div class="team-member-card">
+            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <div class="member-name">Rajan Yadav</div>
+            <div class="member-domain">dsdsdsdsds dsds</div>
+            <a class="view-linkedin" href="#">View on linkedin </a>
+         </div>
+    </div>
+   
+    <!-- se member -->
+    <h2 class="team-member-heading">Members</h2>
+    <div class="team-card-wrapper">
+        <div class="team-member-card">
+            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <div class="member-name">Rajan Yadav</div>
+            <div class="member-domain">dsdsdsdsds dsds</div>
+            <a class="view-linkedin" href="#">View on linkedin </a>
+         </div>
+        <div class="team-member-card">
+           <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+           <div class="member-name">Rajan Yadav</div>
+           <div class="member-domain">dsdsdsdsds dsds</div>
+           <a class="view-linkedin" href="#">View on linkedin </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- faqs -->
+<h1 class="heading-landing">FAQ</h1>
+{% include accordion.html %}
+
+
+

@@ -1,6 +1,10 @@
 /**
  * Animation for transparent header
  */
+
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 html {
   &[data-header-transparent] {
     header.site-header {
@@ -600,20 +604,31 @@ html {
       margin: 0;
 
       > :nth-child(1) {
-        @include relative-font-size(3.9);
+        @include relative-font-size(2);
         letter-spacing: -1px;
-        margin-bottom: 0.1em;
-        font-weight: normal;
+        // margin-bottom: 0.1em;
+        font-weight: bold;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(1.975);
+          @include relative-font-size(1.175);
         }
       }
-
       > :nth-child(2) {
+              @include relative-font-size(3.9);
+              letter-spacing: -1px;
+              // margin-bottom: 0.1em;
+              font-weight: lighter;
+              transition: 0.2s all;
+
+              @include media-query($on-palm) {
+                @include relative-font-size(1.975);
+              }
+            }
+
+      > :nth-child(3) {
         font-weight: lighter;
-        margin-bottom: 0.8em;
+        // margin-bottom: 0.8em;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
@@ -771,9 +786,12 @@ html {
 
 // enquipments card
 
-.enquipment-card{
+.equipments-list{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.equipment-card{
   max-width: 20.75em;
   min-height: 20.75em;
   overflow: hidden;
@@ -783,4 +801,132 @@ html {
   margin: 1em;
   padding: 2.75em 2.5em;
   box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+}
+
+
+// project card
+
+.project-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project-card{
+  max-width: 20.75em;
+  min-height: 20.75em;
+  overflow: hidden;
+  border-radius: .5em;
+  text-decoration: none;
+  background: white;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+}
+
+// landing page
+.heading-landing{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 2.6em;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+  color: #515151;
+  font-weight: normal;
+}
+
+
+
+
+// supporter's page
+.supporter-section{
+  margin: 0;
+ .supporter-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .supporter-card{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 2em;
+
+      gap: 2em;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+
+      .supporter-pfp{
+        width: 20em;
+        // height: 22em;
+        overflow: hidden;
+      }
+       .supporter-name{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 2.2em;
+        line-height: 1.2em;
+        margin-bottom: 4px;
+        color: #515151;
+        font-weight: bold;
+      }
+       .supporter-profession{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 1.5m;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin-bottom: 11px;
+        color: #515151;
+        font-weight: normal;
+      }
+      .supporter-quote{
+        display: block;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        margin-bottom: 15px;
+        width: 300px;
+        color: #666;
+      }
+    }
+  }
+  
+}
+
+
+.team-section{
+  .team-member-heading{
+    font-size: 2em;
+    text-align: center;
+    background-color: yellowgreen;
+  }
+  .team-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin: 2em auto;
+
+    .team-member-card{
+      padding: 2em;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      text-align: center;
+      .member-pfp{
+        width: 15em;
+        img{
+          border-radius: 50em;
+        }
+      }
+      .member-name{
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .member-domain{
+        font-size: 1.5em;
+        color: #333333;
+      }
+      .view-linkedin{
+        text-decoration: none;
+      }
+    }
+    
+  }
+
+
+
 }

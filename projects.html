@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projects
+---
+    <ul class="project-list">
+        {% for project in site.projects %}
+        <a href='./projects/{{project.project_name}}' class="project-card">
+            <l1>
+                <div></div><img src={{ project.card_img }} alt="" class="card-img">
+                <h2 class="project-title">{{project.project_name}}</h2>
+                <div class="project-contributers">Made by: {{project.contributers}}</div>
+            </l1>
+        </a>
+        {% endfor %}
+    </ul>

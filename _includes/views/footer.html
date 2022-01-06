@@ -3,8 +3,16 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-      <div>{{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+      <div class="site-socials">
+        <ul>
+          <li class="link-to-facebook"><a href="https://www.instagram.com/hatchedland">Facebook</a></li>
+          <li class="link-to-instagram"><a href="https://www.instagram.com/hatchedland">Instagram</a></li>
+          <li class="link-to-linkedin"><a href="https://www.instagram.com/hatchedland">Linkedin</a></li>
+          <li class="link-to-email"><a href="https://www.instagram.com/hatchedland">Email</a></li>
+        </ul>
+      <div>
+      {{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
+      <div class="footer-col rss-subscribe">Subscribe for our Newsletter <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
     </div>
   </div>
 </footer>

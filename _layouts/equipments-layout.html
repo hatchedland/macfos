@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{{ content }}
+
+{% if equipment %}
+<h2 class="equipments-name">{{page.equipment.title}}</h2>
+{% if page.active %}
+status: {{ page.state }}
+{% else %}
+status: Active
+{{ page.title }}
+{% endif %}
+{% endif %}

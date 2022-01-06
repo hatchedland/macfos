@@ -1,0 +1,27 @@
+I"Z<h1 id="scoreboard">Scoreboard</h1>
+<p><img src="https://hackster.imgix.net/uploads/attachments/985495/uploads2ftmp2fb533d539-8f18-480d-8e4b-83afb97c04322fcapa_j1sJspuuR8.jpg?auto=compress%2Cformat&amp;w=900&amp;h=675&amp;fit=min" alt="Creating an Electronic Scoreboard with Arduino" />
+Many times we want to play something with friends and we need an electronic boards to count the points of each team or player. Based on this, we developed this project with <a href="https://www.utsource.net/itm/p/8647184.html">Arduino</a>.</p>
+
+<p>The following project is to develop an electronic scoreboard with <a href="https://www.utsource.net/itm/p/8647184.html">Arduino</a>. Through this scoreboard, we will use two <a href="https://www.utsource.net/itm/p/9221543.html">buttons</a> to adjust the score for each player or team.</p>
+
+<p>Next, we will start the discussion and development of the project step by step.</p>
+
+<h2 id="story">Story</h2>
+
+<p>Project Development</p>
+
+<p>Initially, we present the electronic components used and the schematic assembly circuit of the project in Figure 1.</p>
+
+<p>Through this circuit, we use two buttons to adjust the score on the electronic scoreboard.</p>
+
+<p>The <a href="https://www.utsource.net/itm/p/9221543.html">button</a> attached to digital pin 6 adjust player 1’s points, while the button attached to digital pin 7 adjusts player 2’s score.</p>
+
+<p>Points will be sent by <a href="https://www.utsource.net/itm/p/8647184.html">Arduino Nano</a> to the <a href="http://www.utsource.net">TM1637 display module</a>.</p>
+
+<p>Next, we will start discussing the project programming code.</p>
+
+<p><strong>The Logic Programming of the Electronic Scoreboard</strong></p>
+
+<p>Following is the complete code for the development of the electronic scoreboard with Arduino. Soon after, we will present the step by step discussion of the project.</p>
+
+:ET

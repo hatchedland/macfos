@@ -120,13 +120,15 @@ night_mode: "on"
 # this and add the path to the pages in order as they should show up
 header_pages:
    - index.html
+   - projects.html
    - equipments.html
    - blogs.html
    - categories.html
    - archives.html
+   - about.md
   
   # - tags.html
-  # - about.md
+  
 
 # Page default value
 # defaults:
@@ -178,6 +180,9 @@ kmarkdown:
 collections:
       equipments:
         output: true
+      projects:
+        output: true
+
 
 plugins:
   - jekyll-feed

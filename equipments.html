@@ -1,13 +1,27 @@
 ---
-layout: equipments
+layout: equipments-layout
 title: Equipments
 ---
+
+<style>
+
+</style>
 <ul class="equipments-list">
-	{% for equipment in site.collections.equipments %}
-	<li>
-		<h2 class="equipment-name">{{ equipment.title }}</h2>
-	</li>
-
-{% endfor %}
-
+	{% for equipment in site.equipments %}
+	<a href="./equipments/{{equipment.title}}">
+		<li class="equipment-card">
+			<img src={{equipment.banner}} alt="" class="enquipment-img">
+			<h2 class="equipment-name">{{ equipment.title }}</h2>
+			<h2 class="date-purchased">{{ equipment.date_purchased }}</h2>
+			<div class="equipment-status">
+				{% if equipment.state == 'available' %}
+				{{ equipment.state }}
+				{% else %}
+				unavailable
+				{% endif %}
+			</div>
+		</li>
+	</a>
+	{% endfor %}
+</ul>
 </ul>

@@ -266,7 +266,7 @@ html {
 /**
  * Pagination page
  */
-.pagination, .blog-section {
+.pagination, .blog-section, .related-blogs {
   .post-list {
     margin-left: 0;
     list-style: none;
@@ -941,7 +941,7 @@ justify-content: space-evenly;
         font-size: 1.2em;
         line-height: 1.4em;
         margin-bottom: 15px;
-        max-width: 300px;
+        max-width: 500px;
         color: spacegrfey;
       }
     }

@@ -16,11 +16,22 @@
   .footer-headings{
     font-size: 110%;
   }
+  .rss-subscribe{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .subscribe{
+    font-size: 120%;
+    transform: translateY(3px);
+  }
+  .copyright{
+    opacity: 70%;
+  }
 </style>
 
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ " /" | relative_url }}"></data>
-
   <div class="wrapper">
     <div class="site-footer-inner">
       <div class="site-socials">
@@ -35,16 +46,16 @@
         <div class="site-map">
           <div class="footer-headings">Site Map</div>
           <div>
-            <div class="to-home"><a href="/index.html">Home</a></div>
-            <div class="to-projects"><a href="/projects.html">Projects</a></div>
-            <div class="to-blogs"><a href="/blogs.html">Blogs</a></div>
-            <div class="to-equipments"><a href="/equipments.html">Equipments</a></div>
+            <div class="to-home"><a href="{{ "index.html" | relative_url }}">Home</a></div>
+            <div class="to-projects"><a  href="{{ "projects.html" | relative_url }}">Projects</a></div>
+            <div class="to-blogs"><a href="{{ "blogs.html" | relative_url }}">Blogs</a></div>
+            <div class="to-equipments"><a href="{{ "equipments.html" | relative_url }}">Equipments</a></div>
           </div>
           </div>
           <div>
-            <div>{{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
-            <div class="footer-col rss-subscribe">Subscribe for our Newsletter <a href="{{ " /feed.xml" | relative_url
-                }}">via RSS</a></div>
+            <div class="copyright">{{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
+            <div class="footer-col rss-subscribe"><div class="subscribe">Subscribe </div> <a href="{{ " /feed.xml" | relative_url
+                }}"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/16/000000/external-rss-a-type-of-web-feed-allows-users-and-applications-to-access-updates-logo-color-tal-revivo.png"/></a></div>
           </div>
         </div>
       </div>

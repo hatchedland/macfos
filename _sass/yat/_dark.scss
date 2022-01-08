@@ -102,7 +102,7 @@ html[data-theme="dark"]  {
 
   .pagination {
     .post-link {
-      color: $dark-text-color;
+      color: #f8f8f8;
     }
 
     .post-title {
@@ -111,7 +111,7 @@ html[data-theme="dark"]  {
       }
 
       a:after {
-        color: $dark-background-color;
+        color: #f8f8f8;
       }
     }
 
@@ -218,7 +218,12 @@ color: #aaa;
   border-bottom: 0.5px solid #545454;
   }
 
-
+  .post-link{
+    .post-link{
+      all: unset;
+      color: #f8f8f8;
+    }
+  }
   .project-card{
     border: 0.5px solid #545454;
   }
@@ -234,8 +239,11 @@ color: #aaa;
   .team-member-card{
     border: 0.5px solid #545454;
     .member-domain{
-      color: rgb(224, 221, 221);
+      color: #6b6b6b;
     }
+  }
+  .lang-select{
+    color:#f8f8f8;
   }
 }
 

@@ -1,3 +1,7 @@
 <a class="site-brand-inner" rel="author" href="{{ "/" | relative_url }}">
-  <img class="site-favicon" title="{{ site.title | escape }}" src="{{ site.logo }}" onerror="this.style.display='none'">
+  {% if site.data-theme="dark" %}
+  <img class="site-favicon" title="{{ site.title | escape }}" src="{{ site.logo_dark }}" onerror="this.style.display='none'">
+  {% else %} 
+  <img class="site-favicon" title="{{ site.title | escape }}" src="{{ site.logo }}" onerror="this.style.display='none'"> 
+  {% endif %}
 </a>

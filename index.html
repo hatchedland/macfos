@@ -4,14 +4,12 @@
 layout: home
 title: Home
 banner: 
-accordion: 
-  - title: this is item 1
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-  - title: this is item 2
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
+accordion:
+    - title: this is item 1
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - title: this is item 2
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
-
 
 <!-- recent blogs -->
 <div class="blog-section">
@@ -56,85 +54,74 @@ accordion:
 
 <!-- About lab -->
 <div class="about-section">
-    <h1 class="heading-landing">About Lab</h1>
-    <p class="about-lab">
-        One of the newest labs on campus, the IoT lab hosts planning, prototyping, implementation and testing of IoT
-        systems. It also hosts various research activities in areas related to the Internet of Things such as Security,
-        Blockchain, Artificial Intelligence (AI), Brain Computer Interface (BCI), 5G etc. Often, this lab can be seen
-        with undergraduates, master’s students and research scholars working on collaborative and interdisciplinary
-        projects. The lab has active collaboration with various reputed researchers across the globe, and has
-        significant research impact in the above mentioned research areas in terms of research publications and
-        projects.
-    </p>
-    <a href="/about.html"><button class="know-more">Know more</button></a>
+    <div class="heading-landing">About Lab</div>
+    {% include_relative about.html %}
 </div>
 
 
 <!-- Supporter's page -->
 <div class="supporter-section">
-    <h1 class="heading-landing">Our Supporters</h1>
+    <div class="heading-landing">Our Supporters</div>
     <div class="supporter-card-wrapper">
         <div class="supporter-card">
-           <div class="supporter-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
-           <div>
-            <h2 class="supporter-name">Deepak Yadav</h2>
-            <div class="supporter-profession">Founder Momentum Robotics</div>
-            <div class="supporter-quotes">"Loremdads dsd sdsd s d s ds d s d s ds  d sd s d"</div>
-           </div>
+            <div class="supporter-pfp"><img src="https://random.imagecdn.app/500/500" alt=""></div>
+            <div>
+                <div class="supporter-name">Deepak Yadav</div>
+                <div class="supporter-profession">Founder Momentum Robotics</div>
+                <div class="supporter-quote">"Loremdads dsd sdsd s d s ds d s d s ds d sd s d"</div>
+            </div>
         </div>
         <div class="supporter-card">
-           <div class="supporter-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
-           <div>
-            <h2 class="supporter-name">Deepak Yadav</h2>
-            <div class="supporter-profession">Founder Momentum Robotics</div>
-            <div class="supporter-quotes">"Loremdads dsd sdsd s d s ds d s d s ds  d sd s d"</div>
-           </div>
+            <div class="supporter-pfp"><img src="https://random.imagecdn.app/500/500" alt=""></div>
+            <div>
+                <div class="supporter-name">Deepak Yadav</div>
+                <div class="supporter-profession">Founder Momentum Robotics</div>
+                <div class="supporter-quote">"Loremdads dsd sdsd s d s ds d s d s ds d sd s d"</div>
+            </div>
+        </div>
     </div>
 </div>
-
-
 <!-- team members -->
 
 <div class="team-section">
-    <h1 class="heading-landing">Our Team</h1>
-    <h2 class="team-member-heading">Secratary</h2>
+    <div class="heading-landing">Our Team</div>
+    <div class="team-member-heading">Secratary</div>
     <div class="team-card-wrapper">
         <div class="team-member-card">
-            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <img src="https://random.imagecdn.app/500/500" alt=""
+                class="member-pfp">
             <div class="member-name">Rajan Yadav</div>
             <div class="member-domain">dsdsdsdsds dsds</div>
             <a class="view-linkedin" href="#">View on linkedin </a>
-         </div>
+        </div>
         <div class="team-member-card">
-            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <img src="https://random.imagecdn.app/500/500" alt=""
+                class="member-pfp">
             <div class="member-name">Rajan Yadav</div>
             <div class="member-domain">dsdsdsdsds dsds</div>
             <a class="view-linkedin" href="#">View on linkedin </a>
-         </div>
+        </div>
     </div>
-   
+
     <!-- se member -->
-    <h2 class="team-member-heading">Members</h2>
+    <div class="team-member-heading">Members</div>
     <div class="team-card-wrapper">
         <div class="team-member-card">
-            <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
+            <img src="https://random.imagecdn.app/500/500" alt="" class="member-pfp">
             <div class="member-name">Rajan Yadav</div>
             <div class="member-domain">dsdsdsdsds dsds</div>
             <a class="view-linkedin" href="#">View on linkedin </a>
-         </div>
+        </div>
         <div class="team-member-card">
-           <div class="member-pfp"><img src="https://images.statusfacebook.com/profile_pictures/nice/nice_profile_pictures_11.jpg" alt=""></div>
-           <div class="member-name">Rajan Yadav</div>
-           <div class="member-domain">dsdsdsdsds dsds</div>
-           <a class="view-linkedin" href="#">View on linkedin </a>
+            <img src="https://random.imagecdn.app/500/500" alt="" class="member-pfp">
+            <div class="member-name">Rajan Yadav</div>
+            <div class="member-domain">dsdsdsdsds dsds</div>
+            <a class="view-linkedin" href="#">View on linkedin </a>
         </div>
     </div>
 </div>
 
 
 <!-- faqs -->
-<h1 class="heading-landing">FAQ</h1>
+<div class="heading-landing">FAQ</div>
 {% include accordion.html %}
-
-
-

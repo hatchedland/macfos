@@ -3,7 +3,10 @@
 {%- elsif paginator == nil -%}
   {%- assign paginator = site -%}
 {%- endif -%}
-
+<div class="category-catalogue">
+  <a href="./archives.html"><h2 class="category-element">Archieves</h2></a>
+  <a href="./categories.html"><h2 class="category-element">Categories</h2></a>
+</div>
 {%- if paginator.posts.size > 0 -%}
 <div class="pagination">
   <!-- Post list links -->

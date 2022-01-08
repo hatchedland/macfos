@@ -1,18 +1,51 @@
+<style>
+  .site-footer-inner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .site-socials,
+  .site-map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-headings{
+    font-size: 110%;
+  }
+</style>
+
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
 
   <div class="wrapper">
     <div class="site-footer-inner">
       <div class="site-socials">
-        <ul>
-          <li class="link-to-facebook"><a href="https://www.instagram.com/hatchedland">Facebook</a></li>
-          <li class="link-to-instagram"><a href="https://www.instagram.com/hatchedland">Instagram</a></li>
-          <li class="link-to-linkedin"><a href="https://www.instagram.com/hatchedland">Linkedin</a></li>
-          <li class="link-to-email"><a href="https://www.instagram.com/hatchedland">Email</a></li>
-        </ul>
-      <div>
-      {{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
-      <div class="footer-col rss-subscribe">Subscribe for our Newsletter <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
-    </div>
-  </div>
+        <div class="footer-headings">Get connected</div>
+        <div>
+          <div class="to-facebook"><a href="https://www.instagram.com/hatchedland">Facebook</a></div>
+          <div class="to-instagram"><a href="https://www.instagram.com/hatchedland">Instagram</a></div>
+          <div class="to-linkedin"><a href="https://www.instagram.com/hatchedland">Linkedin</a></div>
+          <div class="to-email"><a href="mailto: mail.rajanydv@gmail.com">Email</a></div>
+        </div>
+        </div>
+        <div class="site-map">
+          <div class="footer-headings">Site Map</div>
+          <div>
+            <div class="to-home"><a href="/index.html">Home</a></div>
+            <div class="to-projects"><a href="/projects.html">Projects</a></div>
+            <div class="to-blogs"><a href="/blogs.html">Blogs</a></div>
+            <div class="to-equipments"><a href="/equipments.html">Equipments</a></div>
+          </div>
+          </div>
+          <div>
+            <div>{{ site.copyright }} {% if site.site_url %}{{ site.site_url | escape }}{% endif %}</div>
+            <div class="footer-col rss-subscribe">Subscribe for our Newsletter <a href="{{ " /feed.xml" | relative_url
+                }}">via RSS</a></div>
+          </div>
+        </div>
+      </div>
 </footer>

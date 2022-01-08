@@ -123,12 +123,14 @@ header_pages:
    - projects.html
    - equipments.html
    - blogs.html
-   - categories.html
-   - archives.html
-   - about.md
-  
   # - tags.html
   
+
+  # vanta
+vanta: true       # Enable vanta background 
+vanta-theme: net       # options: globe, net, dots, wave
+
+
 
 # Page default value
 # defaults:

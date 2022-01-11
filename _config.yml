@@ -109,7 +109,7 @@ header_pages:
    - projects.html
    - equipments.html
    - blogs.html
-  # - tags.html
+   - tags.html
   
 
   # vanta

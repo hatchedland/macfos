@@ -613,18 +613,8 @@ html {
       margin: 0;
 
       > :nth-child(1) {
-        @include relative-font-size(3);
-        letter-spacing: -1px;
-        font-weight: bold;
-        transition: 0.2s all;
-
-        @include media-query($on-palm) {
-          @include relative-font-size(1.5);
-        }
-      }
-      > :nth-child(2) {
         @include relative-font-size(5);
-        transform: translateY(-0.5em);
+       
         letter-spacing: -1px;
         // margin-bottom: 0.1em;
         font-weight: lighter;
@@ -634,13 +624,25 @@ html {
           @include relative-font-size(2.5);
         }
       }
+      > :nth-child(2) {
+        @include relative-font-size(2);
+        letter-spacing: -1px;
+        font-weight: bold;
+        transition: 0.2s all;
+        transform: translateY(-1em);
+        @include media-query($on-palm) {
+          @include relative-font-size(1.2);
+        }
+      }
 
       > :nth-child(3) {
+        @include relative-font-size(1.5);
         font-weight: lighter;
         // margin-bottom: 0.8em;
         transition: 0.2s all;
-        transform: translateY(-2em);
+max-width: 30em;
 
+transform: translateY(-1em);
         @include media-query($on-palm) {
           @include relative-font-size(1);
         }
@@ -906,11 +908,13 @@ html {
       padding: 10px 2em;
       gap: 2em;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      align-items: center;
 
       .supporter-pfp {
-        max-height: 20em;
-        max-width: 20em;
-        overflow: hidden;
+        height: 17em;
+        width: 17em;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .supporter-name {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;

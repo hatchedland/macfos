@@ -3,13 +3,100 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
-banner: 
+banner:
 accordion:
     - title: this is item 1
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     - title: this is item 2
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
+
+<!-- About lab -->
+<div class="about-section">
+    <div class="heading-landing">About Lab</div>
+    {% include_relative about.html %}
+</div>
+
+
+<!-- Supporter's page -->
+<div class="supporter-section">
+    <div class="heading-landing">The Supporters</div>
+    <div class="supporter-card-wrapper">
+        <div class="supporter-card">
+            <div style="background-image: url(https://i.postimg.cc/kMhtSCNw/deepak-kumar-yadav.jpg);" class="supporter-pfp"></div>
+            <div>
+                <div class="supporter-name">Deepak Kumar Yadav</div>
+                <div class="supporter-profession">Robotics Engineer, Momentum Robotics</div>
+                <div class="supporter-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                </div>
+            </div>
+        </div>
+        <div class="supporter-card">
+            <div style="background-image: url(https://i.postimg.cc/1tKNrLvc/shraddha-oza.png);" class="supporter-pfp"></div>
+        
+            <div>
+                <div class="supporter-name">Dr. Shraddha Oza</div>
+                <div class="supporter-profession">Asst Prof at AIT, Pune</div>
+                <div class="supporter-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- team members -->
+
+<div class="team-section">
+    <div class="heading-landing">The Team</div>
+    <div class="team-member-heading">Lab Incharges</div>
+    <div class="team-card-wrapper">
+        <div class="team-member-card">
+            <img src="https://i.postimg.cc/HkT9G9yL/s-bharat.jpg" alt="image" class="member-pfp">
+            <div class="member-name">Bharat S</div>
+            <div class="member-domain">TE E&TC</div>
+            <a class="view-linkedin" href="https://www.linkedin.com/in/bharath-s-939b7w818b/" target="_blank">View on
+                linkedin </a>
+        </div>
+        <div class="team-member-card">
+            <img src="https://i.postimg.cc/YSbSwNb8/c-khusi.jpg" alt="image" class="member-pfp">
+            <div class="member-name">C Khusi</div>
+            <div class="member-domain">TE E&TC</div>
+            <a class="view-linkedin" href="https://www.linkedin.com/in/khusi-c-44ab821a2/" target="_blank">View on
+                linkedin </a>
+        </div>
+    </div>
+
+    <!-- se member -->
+    <div class="team-member-heading">Members</div>
+    <div class="team-card-wrapper">
+        <div class="team-member-card">
+            <img src="https://i.postimg.cc/KjPqd4wT/1636393700008-01.jpg" alt="image" class="member-pfp">
+            <div class="member-name">Rajan Yadav</div>
+            <div class="member-domain">SE E&TC-B</div>
+            <a class="view-linkedin" href="https://www.linkedin.com/in/rajanydv/" target="_blank">View on linkedin </a>
+        </div>
+        <div class="team-member-card">
+            <img src="https://i.postimg.cc/25CGVmmT/komal-mishra.jpg" alt="image" class="member-pfp">
+            <div class="member-name">Komal Mishra</div>
+            <div class="member-domain">SE E&TC-A</div>
+            <a class="view-linkedin" href="https://www.linkedin.com/in/komal-mishra-10332a206/" target="_blank">View on
+                linkedin </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- faqs -->
+<div class="heading-landing">FAQ</div>
+{% include accordion.html %}
+
 
 <!-- recent blogs -->
 <div class="blog-section">
@@ -52,76 +139,4 @@ accordion:
     </ul>
 </div>
 
-<!-- About lab -->
-<div class="about-section">
-    <div class="heading-landing">About Lab</div>
-    {% include_relative about.html %}
-</div>
 
-
-<!-- Supporter's page -->
-<div class="supporter-section">
-    <div class="heading-landing">Our Supporters</div>
-    <div class="supporter-card-wrapper">
-        <div class="supporter-card">
-            <div class="supporter-pfp"><img src="https://random.imagecdn.app/500/500" alt=""></div>
-            <div>
-                <div class="supporter-name">Deepak Yadav</div>
-                <div class="supporter-profession">Founder Momentum Robotics</div>
-                <div class="supporter-quote">"Loremdads dsd sdsd s d s ds d s d s ds d sd s d"</div>
-            </div>
-        </div>
-        <div class="supporter-card">
-            <div class="supporter-pfp"><img src="https://random.imagecdn.app/500/500" alt=""></div>
-            <div>
-                <div class="supporter-name">Deepak Yadav</div>
-                <div class="supporter-profession">Founder Momentum Robotics</div>
-                <div class="supporter-quote">"Loremdads dsd sdsd s d s ds d s d s ds d sd s d"</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- team members -->
-
-<div class="team-section">
-    <div class="heading-landing">Our Team</div>
-    <div class="team-member-heading">Secratary</div>
-    <div class="team-card-wrapper">
-        <div class="team-member-card">
-            <img src="https://random.imagecdn.app/500/500" alt=""
-                class="member-pfp">
-            <div class="member-name">Rajan Yadav</div>
-            <div class="member-domain">dsdsdsdsds dsds</div>
-            <a class="view-linkedin" href="#">View on linkedin </a>
-        </div>
-        <div class="team-member-card">
-            <img src="https://random.imagecdn.app/500/500" alt=""
-                class="member-pfp">
-            <div class="member-name">Rajan Yadav</div>
-            <div class="member-domain">dsdsdsdsds dsds</div>
-            <a class="view-linkedin" href="#">View on linkedin </a>
-        </div>
-    </div>
-
-    <!-- se member -->
-    <div class="team-member-heading">Members</div>
-    <div class="team-card-wrapper">
-        <div class="team-member-card">
-            <img src="https://random.imagecdn.app/500/500" alt="" class="member-pfp">
-            <div class="member-name">Rajan Yadav</div>
-            <div class="member-domain">dsdsdsdsds dsds</div>
-            <a class="view-linkedin" href="#">View on linkedin </a>
-        </div>
-        <div class="team-member-card">
-            <img src="https://random.imagecdn.app/500/500" alt="" class="member-pfp">
-            <div class="member-name">Rajan Yadav</div>
-            <div class="member-domain">dsdsdsdsds dsds</div>
-            <a class="view-linkedin" href="#">View on linkedin </a>
-        </div>
-    </div>
-</div>
-
-
-<!-- faqs -->
-<div class="heading-landing">FAQ</div>
-{% include accordion.html %}

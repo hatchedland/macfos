@@ -60,3 +60,16 @@
         </div>
       </div>
 </footer>
+{% comment %}
+Code for setting up inital logo JUST IN CASE some problem arises
+{% endcomment %}
+<script>
+  var html = document.getElementsByTagName('html')[0];
+  if (html.dataset.theme == "light"){
+      console.log(">>>");
+             document.getElementById("brand-logo").setAttribute("src","{{ site.logo }}")
+         }         
+  else{
+      document.getElementById("brand-logo").setAttribute("src","{{ site.logo_dark }}")
+  }
+</script>

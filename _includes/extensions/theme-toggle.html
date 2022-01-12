@@ -22,6 +22,7 @@
         ? localStorage
         : sessionStorage;
     var themeData = loadThemeData();
+    var logo = document.getElementById('brand-logo');
 
     function saveThemeData(data) {
       storage.setItem('theme', JSON.stringify(data));
@@ -38,7 +39,13 @@
       return data;
     }
 
-    function handleThemeToggle(nightShift) {
+      function handleThemeToggle(nightShift) {
+          if(html.dataset.theme == "light")
+          { logo.setAttribute("src","{{  site.logo_dark }}");
+            }
+          else{logo.setAttribute("src","{{  site.logo }}");
+              }
+          
       themeData.nightShift = nightShift;
       saveThemeData(themeData);
       html.dataset.theme = nightShift ? 'dark' : 'light';

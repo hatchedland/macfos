@@ -21,6 +21,7 @@
 
 title: 'MACFOS OFFICIAL'
 logo: "https://i.postimg.cc/RZGpyyJq/Group-4.png"
+# logo change functionality is present in themetoggle.html and footer.html
 logo_dark: "https://i.postimg.cc/5Nch6fyb/avatar-dark.png"
 email: your-email@domain.com
 author: Rajan Yadav
@@ -29,7 +30,7 @@ copyright: Copyright ©
 description: >- # this means to ignore newlines until "baseurl:"
   Official website of MACFOS Lab, Army Institute of Technology.
 
-baseurl: "/macfos" 
+baseurl:
 url: "https://hatchedland.github.io/macfos/"
 favicon: "" # the favicon for your site
 

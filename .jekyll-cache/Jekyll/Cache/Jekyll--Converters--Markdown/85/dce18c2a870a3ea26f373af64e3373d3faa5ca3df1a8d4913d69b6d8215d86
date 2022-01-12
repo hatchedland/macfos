@@ -1,0 +1,43 @@
+I"r<h1 id="what-is-an-oscilloscope-basics--fundamentals">What is an Oscilloscope: basics &amp; fundamentals</h1>
+
+<h3 id="the-oscilloscope-is-one-of-the-most-useful-test-instruments-used-for-electronic-circuit-design-electronics-manufacture-test-service-and-repair">The oscilloscope is one of the most useful test instruments used for electronic circuit design, electronics manufacture, test, service, and repair.</h3>
+
+<p><strong>Oscilloscope Tutorial Includes:</strong><br />
+<a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/scope-basics.php">Oscilloscope basics</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/scope-types.php">Oscilloscope types</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/oscilloscope-specifications.php">Specifications</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/how-to-use-oscilloscope.php">How to use an oscilloscope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/oscilloscope-trigger.php">Scope triggering</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/scope-probes.php">Oscilloscope probes</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/scope-probe-specifications.php">Oscilloscope probe specifications</a>    </p>
+
+<p><em>Scope types includes:</em>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/analogue-oscilloscope.php">Analogue scope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/analogue-storage-oscilloscope.php">Analogue storage scope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/digital-phosphor-oscilloscope-dpo.php">Digital phosphor scope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/digital-storage-oscilloscope-dso.php">Digital scope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/usb-pc-based-oscilloscope.php">USB / PC scope</a>     <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/mixed-signal-oscilloscope-mso.php">Mixed Signal Oscilloscope MSO</a>    </p>
+
+<p>Oscilloscopes, or scopes are an important tool in the armoury of the electronics engineer or tester. An oscilloscope is an item of electronics test equipment that enables waveforms to be seen and in this way makes it very much easier to see any problems occurring in an electronics circuit.</p>
+
+<p>In view of the advantages which they posses, oscilloscopes are an essential piece of electronics test equipment for any electronics laboratory or area testing electronics hardware whether within RF design, general electronics circuit design, electronics manufacturing, service, repair or anywhere that electronic circuits and the waveforms on them need to be investigated.</p>
+
+<p>The name oscilloscope, comes from the fact that it enables oscillations to be viewed. Sometimes the name cathode-ray oscilloscope, or CRO was used. The reason for this was that cathode ray tubes (CRT) were used to display the waveforms. Nowadays these test instruments just tend to be referred to as oscilloscopes, or just scopes.</p>
+
+<iframe width="320" height="180" src="https://www.youtube.com/embed/iXvFw6KyAew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Today, LCDs, or plasma displays are used as they are smaller, and more convenient to use, especially as the do not require the very high voltages of the old CRTs.</p>
+
+<h2 id="function-of-an-oscilloscope">Function of an oscilloscope</h2>
+
+<p>The function of an oscilloscope is to be able to display waveforms on some form of display. In the normal mode of operation time is displayed along the X-axis (horizontal axis) and amplitude is displayed along the Y axis (vertical axis). In this way it is possible to see an electronic waveform on an oscilloscope as it may be envisaged. The waveform could be likened to that of the ripples on travelling along the surface of a pond when a stone is dropped into it.</p>
+
+<p>By seeing a waveform in this manner it is possible to see analyse the operation of the circuit and discover why any problems may exist.</p>
+
+<p><img src="https://www.electronics-notes.com/images/oscilloscope-screen-basic-01.svg" alt="Concept of an oscilloscope screen" /></p>
+
+<p>Basic oscilloscope screen</p>
+
+<h2 id="key-oscilloscope-topics">Key oscilloscope topics</h2>
+
+<p>When looking at oscilloscope there are several key topics and areas of interest:</p>
+
+<ul>
+  <li>
+    <p><strong><em>Types of oscilloscope:</em></strong>   There are several different types of oscilloscope from analogue to digital and more. The first types of oscilloscope were analogue, but with the advances in digital technology, virtually all new test instruments these days are processor controlled and use digital signal processing to provide excellent displays of the waveforms.</p>
+
+    <p>Not only are there oscilloscopes contained in standard bench style boxes, but some scopes are designed to link to computers, using their display and processing to assist. Often they are USB oscilloscopes, connected via USB links but other types are also available linked via other bus systems or for use within rack systems like PXI and the older VXI systems..</p>
+
+    <p><strong>Read more about <em>. . . . <a href="https://www.electronics-notes.com/articles/test-methods/oscilloscope/scope-types.php">Oscilloscope types.</a></em></strong></p>
+  </li>
+</ul>
+:ET

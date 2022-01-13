@@ -7,7 +7,7 @@
 
 # Build
 To build the site yourself
-1. `bundle install inside the repo`
+1. `bundle install`  (Inside the repo)
 2. `bundle exec jekyll serve`
 This should work without any problem.
 ---

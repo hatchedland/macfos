@@ -794,16 +794,23 @@ transform: translateY(-1em);
 
 // enquipments card
 
+.section-wrapper{
+  margin: 0 auto;
+  width: 100%;
+}
+
 .equipments-list {
+  // align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   a {
     all: unset;
     cursor: pointer;
   }
 
   .equipment-card {
+    max-width: fit-content;
     flex-shrink: 1;
     display: flex;
     gap: 2em;
@@ -811,7 +818,7 @@ transform: translateY(-1em);
     border-radius: 0.5em;
     text-decoration: none;
     margin: 1em;
-    padding: 2.75em 2.5em;
+    padding: 1em 2em;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     justify-content: space-evenly;
@@ -822,15 +829,13 @@ transform: translateY(-1em);
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     .equipment-name {
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
-      font-size: 3em;
+      @include relative-font-size(1.65);
       line-height: 1.2em;
       margin-bottom: 4px;
       color: coolblack;
       font-weight: bold;
     }
     .date-purchased {
-      font-size: 1.5em;
       span {
         all: unset;
         font-weight: bolder;
@@ -838,7 +843,7 @@ transform: translateY(-1em);
       }
     }
     .equipment-status {
-      font-size: 1.5em;
+      color: blue;
     }
   }
 }
@@ -882,17 +887,27 @@ transform: translateY(-1em);
 
 // landing page
 .heading-landing {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.6em;
+  @include relative-font-size(1.8);
   line-height: 1.4em;
-  margin: 1em 0;
-  color: coolblack;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #454545;
   font-weight: bold;
   padding: 0 10px 10px 0;
   max-width: fit-content;
-  border-bottom: 0.5px solid lightgray;
-  transform: translateX(-10%);
+
+
 }
+ 
+.heading-landing::after{
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #454545;
+  width: 3em;
+}
+
+
 
 // supporter's page
 .supporter-section {
@@ -905,38 +920,35 @@ transform: translateY(-1em);
     .supporter-card {
       display: flex;
       flex-wrap: wrap;
-      padding: 10px 2em;
+      padding: 1em 2em;
       gap: 2em;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
       align-items: center;
+      width: fit-content;
+      justify-content: center;
+
 
       .supporter-pfp {
-        height: 17em;
-        width: 17em;
+        height: 13em;
+        width: 13em;
         background-repeat: no-repeat;
         background-size: cover;
       }
       .supporter-name {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        font-size: 3em;
+        @include relative-font-size(1.65);
         line-height: 1.2em;
-        margin-bottom: 4px;
         color: coolblack;
         font-weight: bold;
       }
       .supporter-profession {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        font-size: 1.5em;
         letter-spacing: -0.02em;
-        text-transform: uppercase;
-        margin-bottom: 11px;
+        opacity: 70%;
+        margin-bottom: 10px;
         color: coolblack;
         font-weight: normal;
       }
       .supporter-quote {
-        font-size: 1.2em;
         line-height: 1.4em;
-        margin-bottom: 15px;
         max-width: 500px;
         color: spacegrfey;
       }
@@ -946,7 +958,7 @@ transform: translateY(-1em);
 
 .team-section {
   .team-member-heading {
-    font-size: 2em;
+    @include relative-font-size(1.65);
     background-color: #f2f2f2f2;
     padding: 3px 2em;
     text-align: center;
@@ -968,11 +980,13 @@ transform: translateY(-1em);
         border-radius: 50em;
       }
       .member-name {
-        font-size: 2em;
+        @include relative-font-size(1.65);
         font-weight: bold;
+        transform: translateY(5px);
       }
       .member-domain {
-        font-size: 1.5em;
+        @include relative-font-size(1.1);
+        opacity: 70%;
       }
       .view-linkedin {
         text-decoration: none;

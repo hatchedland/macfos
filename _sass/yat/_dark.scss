@@ -214,10 +214,11 @@ html[data-theme="dark"]  {
   // added custom css
 
   .heading-landing{
-color: #aaa;
-  border-bottom: 0.5px solid #545454;
+    color: #aaa;
   }
-
+  .heading-landing::after{
+    background-color: #aaa;
+  }
   .post-link{
     .post-link{
       all: unset;

@@ -2,24 +2,25 @@
 layout: default
 title: Equipments
 ---
-
-<div class="heading-landing">Equipments</div>
-<div class="equipments-list">
-	{% for equipment in site.equipments %}
-	<a href="./equipments/{{equipment.title}}" class="equipment-card">
-		<img src={{equipment.equipment_img}} alt={{equipment.title}} class="equipment-img">
-		<div class="equipment-description">
-			<div class="equipment-name">{{ equipment.title }}</div>
-			<div class="date-purchased"><span>Date Purchased: </span>{{ equipment.date_purchased }}</div>
-			<div class="equipment-status">
-				{% if equipment.state == 'Active' %}
-				{{ equipment.state }}
-				{% else %}
-				Inactive
-				{% endif %}
+<div class="section-wrapper">
+	<div class="heading-landing">Equipments</div>
+	<div class="equipments-list">
+		{% for equipment in site.equipments %}
+		<a href="./equipments/{{equipment.title}}" class="equipment-card">
+			<img src={{equipment.equipment_img}} alt={{equipment.title}} class="equipment-img">
+			<div class="equipment-description">
+				<div class="equipment-name">{{ equipment.title }}</div>
+				<div class="date-purchased"><span>Date Purchased: </span>{{ equipment.date_purchased }}</div>
+				<div class="equipment-status">
+					{% if equipment.state == 'Active' %}
+					{{ equipment.state }}
+					{% else %}
+					Inactive
+					{% endif %}
+				</div>
+	
 			</div>
-
-		</div>
-	</a>
-	{% endfor %}
+		</a>
+		{% endfor %}
+	</div>
 </div>
